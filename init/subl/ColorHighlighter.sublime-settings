@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "style": "default",
+    "icons": true,
+    "ha_style": "default",
+    "ha_icons": false
+}

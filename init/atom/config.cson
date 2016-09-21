@@ -1,0 +1,51 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "9ce35ede-fd2a-4608-bbac-65dfea715b84"
+    analytics: false
+    beautifyEntireFileOnSave: false
+    css_newline_between_rules: true
+    css_no_lead_zero: true
+    css_preserve_newlines: true
+    js_break_chained_methods: true
+    js_end_with_comma: true
+    js_end_with_newline: true
+    js_keep_array_indentation: true
+    js_space_before_conditional: false
+  "copy-as-rtf":
+    fontface: "Arial"
+    fontsize: 13
+  core:
+    packagesWithKeymapsDisabled: [
+      "copy-as-rtf"
+    ]
+  editor:
+    autoHideMenuBar: true
+    fontFamily: "Consolas"
+    fontSize: 13
+    ignoredNames: [
+      "bower_components/*"
+      "node_modules/*"
+      "dist/*"
+      "web/assets/*"
+      "web_us/assets/*"
+      "web/bundles/*"
+      "web_us/bundles/*"
+    ]
+    invisibles: {}
+    lineHeight: 1.2
+    showIndentGuide: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "80bcd2de-72ce-e287-5f97-9b3402a4252b"
+  linter:
+    errorPanelHeight: 37
+  "linter-eslint": {}
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
+    executablePath: "/Users/mjeightyfive/.rbenv/shims/scss-lint"
+  tabs:
+    enableVcsColoring: true
+    tabScrolling: false
+  welcome:
+    showOnStartup: false

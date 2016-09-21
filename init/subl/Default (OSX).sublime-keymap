@@ -1,0 +1,14 @@
+[
+    {
+        "keys": ["super+alt+f"],
+        "command": "show_panel",
+        "args": {
+            "panel": "replace",
+            "reverse": false
+        }
+    },
+    {
+        "keys": ["ctrl+alt+f"],
+        "command": "esformatter"
+    }
+]
