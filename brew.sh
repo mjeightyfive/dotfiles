@@ -24,6 +24,8 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
+brew install zsh
+brew tap homebrew/versions
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
