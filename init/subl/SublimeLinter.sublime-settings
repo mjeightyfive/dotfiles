@@ -26,7 +26,7 @@
         "paths": {
             "linux": [],
             "osx": [
-                "~/.rbenv/shims"
+                "/Users/mjeightyfive/.nvm/versions/node/v6.9.1/bin/"
             ],
             "windows": []
         },
