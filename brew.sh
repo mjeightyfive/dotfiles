@@ -25,7 +25,11 @@ brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
 brew install zsh
+
+brew tap homebrew/dupes
 brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -44,8 +48,10 @@ brew install gnupg
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
-brew install screen
-brew install homebrew/php/php56 --with-gmp
+brew install homebrew/dupes/grep
+brew install homebrew/dupes/openssh
+brew install homebrew/dupes/screen
+brew install php71
 
 # Install font tools.
 brew tap bramstein/webfonttools
