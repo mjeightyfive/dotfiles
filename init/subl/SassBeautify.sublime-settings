@@ -1,9 +1,20 @@
 {
-    "indent": 4,
-    "dasherize": false,
-    "old": false,
-    "path": "/Users/mjeightyfive/.nvm/versions/node/v6.3.1/bin:/Users/mjeightyfive/.rbenv/shims:/Users/mjeightyfive/bin:/Users/mjeightyfive/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mjeightyfive/.composer/vendor/bin:/usr/local/m-cli",
-    "beautifyOnSave": false,
-    "inlineComments": true,
-    "newlineBetweenSelectors": true
+  // How many spaces to use for each level of indentation. "t" means use hard tabs.
+  "indent": 4,
+  // Convert underscores to dashes.
+  "dasherize": false,
+  // Output the old-style ":prop val" property syntax. Only meaningful when generating Sass.
+  "old": false,
+  // Custom environment PATH.
+  "path": "/Users/mjeightyfive/.rbenv/shims:/Users/mjeightyfive/.rbenv/bin:/Users/mjeightyfive/.nvm/versions/node/v7.4.0/bin:/Users/mjeightyfive/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+  // Custom environment GEM_PATH.
+  "gemPath": false,
+  // Beautify the sass file after saving it?
+  "beautifyOnSave": false,
+  // Keep "inline" comments inline?
+  "inlineComments": true,
+  // Add a new line between selectors?
+  "newlineBetweenSelectors": true,
+  // Use single quotes everywhere
+  "useSingleQuotes": true
 }
