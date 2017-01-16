@@ -84,6 +84,7 @@ brew install woff2
 # brew install ucspi-tcp # `tcpserver` etc.
 # brew install xpdf
 # brew install xz
+brew install rsync
 
 # Install other useful binaries.
 brew install ack
