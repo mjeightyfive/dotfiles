@@ -85,6 +85,7 @@ brew install woff2
 # brew install xpdf
 # brew install xz
 brew install rsync
+brew install fdupes
 
 # Install other useful binaries.
 brew install ack
