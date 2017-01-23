@@ -105,6 +105,7 @@ brew install tree
 # brew install vbindiff
 brew install webkit2png
 brew install zopfli
+brew install m-cli
 
 # Remove outdated versions from the cellar.
 brew cleanup
