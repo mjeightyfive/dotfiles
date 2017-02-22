@@ -793,6 +793,13 @@ cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.jso
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 
 ###############################################################################
+# Sketch.app                                                                #
+###############################################################################
+
+# Export Compact SVGs
+defaults write com.bohemiancoding.sketch3 exportCompactSVG -bool yes
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
