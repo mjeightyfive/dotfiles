@@ -169,3 +169,8 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function shrug() {
+    echo -n "¯\_(ツ)_/¯" | (xsel||pbcopy);
+    echo "¯\_(ツ)_/¯ copied to your clipboard";
+}
