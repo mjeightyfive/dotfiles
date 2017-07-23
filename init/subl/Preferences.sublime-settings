@@ -15,10 +15,15 @@
         "app_us/cache/*"
     ],
     "bold_folder_labels": false,
+    "caret_style": "phase",
+    "caret_extra_top": 1,
+    "caret_extra_bottom": 1,
+    "caret_extra_width": 1,
     "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
     "default_encoding": "UTF-8",
     "default_line_ending": "unix",
     "detect_indentation": false,
+    "draw_minimap_border": true,
     "ensure_newline_at_eof_on_save": false,
     "file_exclude_patterns":
     [
@@ -43,6 +48,7 @@
         "no_italic"
     ],
     "font_size": 12,
+    "highlight_line": true,
     "highlight_modified_tabs": true,
     "ignored_packages":
     [
@@ -53,8 +59,6 @@
         "draw_normal",
         "draw_active"
     ],
-    "draw_minimap_border": true,
-    "highlight_line": true,
     "line_padding_bottom": -1,
     "line_padding_top": -1,
     "match_brackets": true,
