@@ -2,6 +2,14 @@
     "always_show_minimap_viewport": true,
     "binary_file_patterns":
     [
+        ".DS_Store",
+        "tmp/*",
+        "_tmp/*",
+        "*.png",
+        "*.psd",
+        "*.ai",
+        "*.sketch",
+        "*.min.js",
         "bower_components/*",
         "node_modules/*",
         "dist/*",
