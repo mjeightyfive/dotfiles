@@ -1,7 +1,10 @@
 {
     "dictionary": "Packages/Language - English/en_GB.dic",
-    "extensions": [
-        "md"
+    "extensions":
+    [
+        "md",
+        "mdown",
+        "txt"
     ],
     "spell_check": true,
     "color_scheme": "Packages/MarkdownEditing/MarkdownEditor.tmTheme",
@@ -11,15 +14,9 @@
     ],
     "font_face": "Courier New",
     "font_size": 14,
+    "tab_size": 4,
+    "line_numbers": true,
     "highlight_line": true,
-    "highlight_modified_tabs": true,
-    "ignored_packages": [
-        "Vintage"
-    ],
-    "indent_guide_options": [
-        "draw_normal",
-        "draw_active"
-    ],
     "line_padding_bottom": -1,
     "line_padding_top": -1,
     "match_brackets": true,
@@ -45,6 +42,42 @@
     "show_line_endings": true,
     "tab_size": 4,
     "theme": "Material-Theme-Darker.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": true,
+    "caret_style": "phase",
+    "caret_extra_top": 3,
+    "caret_extra_bottom": 3,
+    "draw_centered": false,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "ignored_packages": [
+        "Vintage"
+    ],
+    "line_padding_bottom": -1,
+    "line_padding_top": -1,
+    "match_brackets": true,
+    "match_brackets_angle": true,
+    "material_theme_accent_indigo": true,
+    "material_theme_accent_red": false,
+    "material_theme_accent_tomato": false,
+    "material_theme_bold_tab": true,
+    "material_theme_bullet_tree_indicator": true,
+    "material_theme_compact_panel": false,
+    "material_theme_compact_sidebar": true,
+    "material_theme_disable_folder_animation": true,
+    "material_theme_disable_tree_indicator": false,
+    "material_theme_panel_separator": true,
+    "material_theme_small_statusbar": true,
+    "material_theme_small_tab": true,
+    "material_theme_tabs_autowidth": true,
+    "material_theme_tabs_separator": true,
+    "material_theme_tree_headings": true,
+    "overlay_scroll_bars": "enabled",
+    "remember_open_files": true,
+    "show_encoding": true,
+    "show_line_endings": true,
+    "tab_size": 4,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": true,
