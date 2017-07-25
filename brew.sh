@@ -26,6 +26,7 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install zsh
 
+brew install fdupes
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
