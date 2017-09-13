@@ -1,0 +1,20 @@
+{
+    "debug": false,
+    "prettier_cli_path": "/Users/mjeightyfive/.nvm/versions/node/v8.4.0/bin/prettier",
+    "node_path": "",
+    "auto_format_on_save": false,
+    "auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
+    "allow_inline_formatting": true,
+    "custom_file_extensions": [],
+    "additional_cli_args": {},
+    "max_file_size_limit": -1,
+    "prettier_options": {
+        "printWidth": 80,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "parser": "flow",
+        "semi": true
+    }
+}
