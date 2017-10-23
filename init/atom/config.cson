@@ -1,5 +1,47 @@
 "*":
   core:
+    ignoredNames: [
+      "\"vendor/*\""
+      "\"bower_components/*\""
+      "\"node_modules/*\""
+      "\"dist/*\""
+      "\"web/*\""
+      "\"web_us/*\""
+      "\"web_se/*\""
+      "\"web_no/*\""
+      "\"web_global/*\""
+      "\"app/cache/*\""
+      "\"app_us/cache/*\""
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "\"*.jpg\""
+      "\"*.jpeg\""
+      "\"*.png\""
+      "\"*.gif\""
+      "\"*.ttf\""
+      "\"*.tga\""
+      "\"*.dds\""
+      "\"*.ico\""
+      "\"*.eot\""
+      "\"*.pdf\""
+      "\"*.swf\""
+      "\"*.jar\""
+      "\"*.zip\""
+      "\".DS_Store\""
+      "\"tmp/*\""
+      "\"_tmp/*\""
+      "\"*.png\""
+      "\"*.psd\""
+      "\"*.ai\""
+      "\"*.sketch\""
+      "\"*.min.js\""
+    ]
+    openEmptyEditorOnStart: false
     reopenProjectMenuCount: 13
     telemetryConsent: "no"
     themes: [
@@ -11,6 +53,12 @@
     fontSize: 12
     invisibles: {}
     lineHeight: 1.4
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 140
+    tabLength: 4
   "exception-reporting":
     userId: "edecb10e-db0a-420a-a305-ae297633a49a"
   welcome:
