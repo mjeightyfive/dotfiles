@@ -40,8 +40,9 @@
   "workbench.startupEditor": "none",
   "window.restoreWindows": "all",
   "window.restoreFullscreen": true,
-  "window.title": "${activeEditorMedium}${separator}${dirty}",
+  "window.title": "${folderName}${separator}${activeEditorMedium}${separator}${dirty}",
   "window.closeWhenEmpty": true,
   "editor.cursorBlinking": "phase",
-  "editor.renderWhitespace": "boundary"
+  "editor.renderWhitespace": "boundary",
+  "window.newWindowDimensions": "maximized"
 }
