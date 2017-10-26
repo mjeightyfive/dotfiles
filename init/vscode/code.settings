@@ -46,5 +46,8 @@
   "editor.renderWhitespace": "boundary",
   "window.newWindowDimensions": "maximized",
   "workbench.editor.showIcons": false,
-  "editor.multiCursorModifier": "ctrlCmd"
+  "editor.multiCursorModifier": "ctrlCmd",
+  "prettier.singleQuote": true,
+  "prettier.parser": "flow",
+  "prettier.tabWidth": 4
 }
