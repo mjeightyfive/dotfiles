@@ -44,5 +44,7 @@
   "window.closeWhenEmpty": true,
   "editor.cursorBlinking": "phase",
   "editor.renderWhitespace": "boundary",
-  "window.newWindowDimensions": "maximized"
+  "window.newWindowDimensions": "maximized",
+  "workbench.editor.showIcons": false,
+  "editor.multiCursorModifier": "ctrlCmd"
 }
