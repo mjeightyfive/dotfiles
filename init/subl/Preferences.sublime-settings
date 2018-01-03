@@ -52,7 +52,7 @@
     "caret_extra_width": 1,
     "caret_style": "phase",
     "close_windows_when_empty": false,
-    "color_scheme": "Packages/DA UI/DA Dark.tmTheme",
+    "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
     "copy_with_empty_selection": true,
     "create_window_at_startup": true,
     "default_encoding": "UTF-8",
@@ -199,7 +199,7 @@
     "spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
     "tab_completion": true,
     "tab_size": 4,
-    "theme": "DA.sublime-theme",
+    "theme": "Adaptive.sublime-theme",
     "theme_font_options":
     [
     ],
