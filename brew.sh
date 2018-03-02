@@ -95,7 +95,6 @@ brew install dark-mode
 # brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
-brew install gifsicle
 # brew install lua
 # brew install lynx
 # brew install p7zip
