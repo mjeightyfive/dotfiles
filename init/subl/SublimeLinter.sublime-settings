@@ -40,24 +40,23 @@
     // Linter specific settings can also be changed in sublime-project settings.
     // What settings are available is documented in the readme of the
     // specific linter plugin.
-    // "linters": {
-    //     "csslint": {
-    //         "disable": false,
-    //         "args": [],
-    //         "excludes": []
-    //     },
-    //     "flake8": {
-    //         "python": null,
-    //         "disable": false,
-    //         "args": [],
-    //         "excludes": [],
-    //         "ignore": "",
-    //         "max-complexity": -1,
-    //         "max-line-length": null,
-    //         "select": ""
-    //     }
-    // }
-    "linters": {},
+    "linters": {
+        "eslint": {
+            "disable": false,
+            "args": [],
+            "excludes": [],
+            "env": {
+              "PATH": "/usr/local/bin"
+            }
+        },
+        "stylelint": {
+            "@disable": false,
+            "args": [],
+            "env": {
+              "PATH": "/usr/local/bin"
+            }
+        }
+    },
 
     // Determines what happens when a linter reports a problem without column.
     // By default, a mark is put in the gutter but no text is highlighted.
