@@ -29,7 +29,6 @@ brew install zsh
 brew install fdupes
 brew tap homebrew/dupes
 brew tap homebrew/versions
-brew tap homebrew/homebrew-php
 
 brew install bash-completion2
 
@@ -54,6 +53,8 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
+brew install php@7.1
+
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
@@ -61,10 +62,7 @@ brew install gnupg
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install php71
+brew install screen
 
 # Install font tools.
 brew tap bramstein/webfonttools
