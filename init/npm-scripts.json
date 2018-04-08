@@ -1,0 +1,4 @@
+"scripts": {
+    "start": "webpack-dev-server --mode development --progress",
+    "build": "webpack --mode production"
+}
