@@ -116,6 +116,7 @@ brew install tree
 # brew install vbindiff
 brew install webkit2png
 brew install zopfli
+brew install neofetch
 brew install m-cli
 brew install awscli
 
