@@ -6,7 +6,7 @@
   // Output the old-style ":prop val" property syntax. Only meaningful when generating Sass.
   "old": false,
   // Custom environment PATH.
-  "path": "/Users/mjeightyfive/.nvm/versions/node/v8.5.0/bin:/Users/mjeightyfive/.rbenv/shims:/Users/mjeightyfive/.rbenv/bin:/Users/mjeightyfive/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+  "path": "/Users/mjeightyfive/.nvm/versions/node/v8.11.3/bin:/Users/mjeightyfive/.rbenv/shims:/Users/mjeightyfive/.rbenv/bin:/Users/mjeightyfive/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
   // Custom environment GEM_PATH.
   "gemPath": false,
   // Beautify the sass file after saving it?

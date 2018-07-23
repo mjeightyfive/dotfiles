@@ -1,6 +1,6 @@
 {
     "debug": false,
-    "prettier_cli_path": "/Users/mjeightyfive/.nvm/versions/node/v9.6.0/bin/prettier",
+    "prettier_cli_path": "/Users/mjeightyfive/.nvm/versions/node/v8.11.3/bin/prettier",
     "node_path": "",
     "auto_format_on_save": false,
     "auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
