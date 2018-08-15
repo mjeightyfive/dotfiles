@@ -116,6 +116,8 @@ brew install ssh-copy-id
 brew install tree
 # brew install vbindiff
 brew install webkit2png
+brew install vbindiff
+brew install ydiff
 brew install zopfli
 brew install neofetch
 brew install m-cli
