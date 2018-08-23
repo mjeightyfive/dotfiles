@@ -4,7 +4,9 @@
     "rules": {
         "comma-dangle": ["error", "never"],
         "import/no-unresolved": "off",
-        "import/extensions": "off",
+        "import/extensions": ["error", "always", {
+            "ignorePackages": true
+        }],
         "arrow-body-style": ["error", "always"],
         "space-before-function-paren": ["error", "never"],
         "indent": ["error", 4, {
@@ -25,7 +27,9 @@
             "forbid": ["object"]
         }],
         "react/no-multi-comp": "off",
-        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-one-expression-per-line": ["off", {
+            "allow": "single-child"
+        }],
         "jsx-a11y/no-static-element-interactions": 0,
         "jsx-a11y/img-has-alt": [ 0, "Foo" ],
         "jsx-a11y/href-no-hash": "off",
