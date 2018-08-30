@@ -2,19 +2,21 @@
     "extends": ["airbnb", "react-app", "prettier"],
     "plugins": ["prettier"],
     "rules": {
+        "semi": ["error", "always"],
         "comma-dangle": ["error", "never"],
         "import/no-unresolved": "off",
-        "import/extensions": ["error", "always", {
-            "ignorePackages": true
-        }],
+        "import/extensions": "off",
         "arrow-body-style": ["error", "always"],
+        "keyword-spacing": ["error", {
+            "before": true,
+            "after": true
+        }],
         "space-before-function-paren": ["error", "never"],
         "indent": ["error", 4, {
             "SwitchCase": 1
         }],
         "class-methods-use-this": ["off", { "exceptMethods": ["foo"] }],
         "func-names": ["off", "never"],
-        "keyword-spacing": ["off"],
         "react/jsx-filename-extension": ["error", {
             "extensions": [".js", ".jsx"]
         }],
@@ -27,9 +29,7 @@
             "forbid": ["object"]
         }],
         "react/no-multi-comp": "off",
-        "react/jsx-one-expression-per-line": ["off", {
-            "allow": "single-child"
-        }],
+        "react/jsx-one-expression-per-line": "off",
         "jsx-a11y/no-static-element-interactions": 0,
         "jsx-a11y/img-has-alt": [ 0, "Foo" ],
         "jsx-a11y/href-no-hash": "off",
