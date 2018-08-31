@@ -144,4 +144,10 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # ncdu
-alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules --exclude bower_components"
+
+# fzf
+alias fzf="fzf --preview 'bat --color \"always\" {}'"
+
+# add support for ctrl+o to open selected file in ST
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(subl {})+abort'"
