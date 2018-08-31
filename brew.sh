@@ -96,7 +96,13 @@ brew install woff2
 # brew install xpdf
 # brew install xz
 brew install rsync
-brew install fdupes
+brew install fd
+brew install bat
+brew install fzf
+brew install ncdu
+brew install ack
+brew install ag
+brew install noti
 
 # Install other useful binaries.
 brew install ack
