@@ -151,3 +151,6 @@ alias fzf="fzf --preview 'bat --color \"always\" {}'"
 
 # add support for ctrl+o to open selected file in ST
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(subl {})+abort'"
+
+# prettyping
+alias ping='prettyping --nolegend'
