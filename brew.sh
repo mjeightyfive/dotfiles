@@ -29,7 +29,6 @@ brew install zsh
 brew install fdupes
 brew tap homebrew/dupes
 brew tap homebrew/versions
-
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
