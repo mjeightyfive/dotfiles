@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { PureComponent } from 'react';
+import { render } from 'react-dom';
 
 import './App.scss';
 
-const App = () => {
-    return (
-        <h1>Hello World</h1>
-    );
-};
+class App extends PureComponent {
+    render() {
+        return <h1>Hello World</h1>;
+    }
+}
 
 export default App;
 
-ReactDOM.render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
