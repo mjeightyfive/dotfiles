@@ -27,8 +27,6 @@ brew install bash
 brew install zsh
 
 brew install fdupes
-brew tap homebrew/dupes
-brew tap homebrew/versions
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -105,8 +103,7 @@ brew install noti
 
 # Install other useful binaries.
 brew install ack
-brew install dark-mode
-#brew install exiv2
+# brew install exiv2
 # brew install git
 brew install git-lfs
 brew install webp
@@ -119,7 +116,6 @@ brew install imagemagick --with-webp
 brew install rename
 brew install ssh-copy-id
 brew install tree
-# brew install vbindiff
 brew install webkit2png
 brew install vbindiff
 brew install ydiff
