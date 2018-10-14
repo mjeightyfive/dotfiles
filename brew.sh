@@ -123,6 +123,7 @@ brew install zopfli
 brew install neofetch
 brew install m-cli
 brew install awscli
+brew install yarn
 
 # Remove outdated versions from the cellar.
 brew cleanup
