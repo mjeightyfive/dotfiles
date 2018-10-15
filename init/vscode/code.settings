@@ -1,53 +1,55 @@
 {
-  "workbench.colorTheme": "Material Theme",
-  "editor.fontFamily": "Monaco, 'Courier New', monospace",
-  "editor.wordWrap": "on",
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
-  },
-  "files.watcherExclude": {
-    "vendor/**": true,
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/**": true
-  },
-  "search.exclude": {
-    "vendor/**": true,
-    "**/node_modules": true,
-    "**/bower_components": true
-  },
-  "editor.lineHeight": 15,
-  "materialTheme.cache.workbench.settings": {
-    "themeColours": "Darker",
-    "accent": "Blue"
-  },
-  "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#2979FF",
-    "list.activeSelectionForeground": "#2979FF",
-    "list.inactiveSelectionForeground": "#2979FF",
-    "list.highlightForeground": "#2979FF",
-    "scrollbarSlider.activeBackground": "#2979FF50",
-    "editorSuggestWidget.highlightForeground": "#2979FF",
-    "textLink.foreground": "#2979FF",
-    "progressBar.background": "#2979FF",
-    "pickerGroup.foreground": "#2979FF",
-    "tab.activeBorder": "#2979FF"
-  },
-  "workbench.startupEditor": "none",
-  "window.restoreWindows": "all",
-  "window.restoreFullscreen": true,
-  "window.title": "${folderName}${separator}${activeEditorMedium}${separator}${dirty}",
-  "window.closeWhenEmpty": true,
-  "editor.cursorBlinking": "phase",
-  "editor.renderWhitespace": "boundary",
-  "window.newWindowDimensions": "maximized",
-  "workbench.editor.showIcons": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "prettier.singleQuote": true,
-  "prettier.parser": "flow",
-  "prettier.tabWidth": 4
-}
+    "workbench.colorTheme": "Material Theme Darker",
+    "editor.fontFamily": "Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true
+    },
+    "files.watcherExclude": {
+      "vendor/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true
+    },
+    "search.exclude": {
+      "vendor/**": true,
+      "**/node_modules": true,
+      "**/bower_components": true
+    },
+    "editor.lineHeight": 15,
+    "materialTheme.cache.workbench.settings": {
+      "themeColours": "Darker",
+      "accent": "Blue"
+    },
+    "workbench.colorCustomizations": {
+      "activityBarBadge.background": "#2979FF",
+      "list.activeSelectionForeground": "#2979FF",
+      "list.inactiveSelectionForeground": "#2979FF",
+      "list.highlightForeground": "#2979FF",
+      "scrollbarSlider.activeBackground": "#2979FF50",
+      "editorSuggestWidget.highlightForeground": "#2979FF",
+      "textLink.foreground": "#2979FF",
+      "progressBar.background": "#2979FF",
+      "pickerGroup.foreground": "#2979FF",
+      "tab.activeBorder": "#2979FF"
+    },
+    "workbench.startupEditor": "none",
+    "window.restoreWindows": "all",
+    "window.restoreFullscreen": true,
+    "window.title": "${folderName}${separator}${activeEditorMedium}${separator}${dirty}",
+    "window.closeWhenEmpty": true,
+    "editor.cursorBlinking": "phase",
+    "editor.renderWhitespace": "boundary",
+    "window.newWindowDimensions": "maximized",
+    "workbench.editor.showIcons": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "prettier.singleQuote": true,
+    "prettier.parser": "flow",
+    "prettier.tabWidth": 4,
+    "workbench.iconTheme": "eq-material-theme-icons-darker"
+  }
