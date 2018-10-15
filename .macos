@@ -265,7 +265,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -835,3 +835,6 @@ sudo defaults write com.apple.CrashReporter DialogType none
 # Turn off video autoplay
 defaults write com.apple.AppStore UserSetAutoPlayVideoSetting -int 1
 defaults write com.apple.AppStore AutoPlayVideoSetting -string off
+
+# Disable Menu Bar transparency
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
