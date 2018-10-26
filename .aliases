@@ -154,3 +154,6 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(subl {})+abort'"
 
 # prettyping
 alias ping='prettyping --nolegend'
+
+alias shrug="printf \"¯\_(ツ)_/¯\" | pbcopy && echo \"¯\_(ツ)_/¯ copied to clipboard\""
+alias flipt="printf \"(╯°□°)╯︵ ┻━┻\" | pbcopy && echo \"(╯°□°)╯︵ ┻━┻ copied to cplipboard\""
