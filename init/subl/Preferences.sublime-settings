@@ -71,6 +71,7 @@
     "fallback_encoding": "Western (Windows 1252)",
     "file_exclude_patterns":
     [
+        ".docz/*",
         "vendor/*",
         "bower_components/*",
         "node_modules/*",
