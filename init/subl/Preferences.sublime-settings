@@ -209,5 +209,21 @@
         "**/node_modules/**",
         "**/vendor/**"
     ],
-    "ignored_packages": ["Vintage"]
+    "ignored_packages": ["Vintage"],
+    "material_theme_accent_indigo": true,
+    "material_theme_accent_red": false,
+    "material_theme_accent_tomato": false,
+    "material_theme_bold_tab": true,
+    "material_theme_bullet_tree_indicator": true,
+    "material_theme_compact_panel": false,
+    "material_theme_compact_sidebar": true,
+    "material_theme_disable_folder_animation": true,
+    "material_theme_disable_tree_indicator": false,
+    "material_theme_panel_separator": true,
+    "material_theme_small_statusbar": true,
+    "material_theme_small_tab": true,
+    "material_theme_tabs_autowidth": true,
+    "material_theme_tabs_separator": true,
+    "material_theme_tree_headings": true,
+    "enable_typescript_language_service": false
 }
