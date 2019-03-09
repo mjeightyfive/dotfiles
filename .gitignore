@@ -1,6 +1,9 @@
 ### Firebase ###
 firebase-debug.log
 
+### nextjs ###
+.next/
+
 ### Hugo ###
 hugo.exe
 dist/
