@@ -125,6 +125,7 @@ brew install m-cli
 brew install awscli
 brew install yarn
 brew install python3
+brew cask install proxyman
 
 # Remove outdated versions from the cellar.
 brew cleanup
