@@ -74,6 +74,7 @@
     "file_exclude_patterns":
     [
         ".docz/*",
+        ".cache/*",
         "dist/*",
         "bower_components/*",
         "node_modules/*",
@@ -153,6 +154,7 @@
     [
         "*.log",
         "*/.git/*",
+        "*/.cache/*",
         "**/dist/**",
         "**/node_modules/**",
         "**/vendor/**",
