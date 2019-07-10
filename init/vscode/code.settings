@@ -1,6 +1,7 @@
 {
     "workbench.colorTheme": "Material Theme Darker",
-    "editor.fontFamily": "Monaco, 'Courier New', monospace",
+    "workbench.fontAliasing": "antialiased",
+    "editor.fontFamily": "Monaco",
     "editor.wordWrap": "on",
     "files.exclude": {
       "**/.git": true,
@@ -10,16 +11,15 @@
       "**/.DS_Store": true
     },
     "files.watcherExclude": {
-      "vendor/**": true,
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true,
       "**/node_modules/**": true
     },
     "search.exclude": {
-      "vendor/**": true,
       "**/node_modules": true,
       "**/bower_components": true
     },
+    "search.location": "panel",
     "editor.lineHeight": 15,
     "materialTheme.cache.workbench.settings": {
       "themeColours": "Darker",
@@ -35,7 +35,9 @@
       "textLink.foreground": "#2979FF",
       "progressBar.background": "#2979FF",
       "pickerGroup.foreground": "#2979FF",
-      "tab.activeBorder": "#2979FF"
+      "tab.activeBorder": "#2979FF",
+      "editorWarning.foreground": "#ff0000",
+      "editorWarning.border": "#800000"
     },
     "workbench.startupEditor": "none",
     "window.restoreWindows": "all",
@@ -50,7 +52,6 @@
     "prettier.singleQuote": true,
     "prettier.parser": "flow",
     "prettier.tabWidth": 4,
-    "editor.fontSize": 13,
     "editor.tokenColorCustomizations": {
       "textMateRules": [
         {
@@ -199,5 +200,6 @@
           }
         }
       ]
-    }
+    },
+    "editor.fontSize": 13
 }
