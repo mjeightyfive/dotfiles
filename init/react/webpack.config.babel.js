@@ -5,14 +5,13 @@ import postcssPresetEnv from 'postcss-preset-env';
 import postcssImport from 'postcss-import';
 
 const isProduction = process.env.NODE_ENV === 'production';
-const browsers = ['last 2 versions'];
 
 const postCssOptions = {
     sourceMap: !isProduction,
     plugins: [
         postcssImport(),
-        postcssPresetEnv({ browsers }),
-        autoprefixer({ browsers })
+        postcssPresetEnv(),
+        autoprefixer()
     ]
 };
 
