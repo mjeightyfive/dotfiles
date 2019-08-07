@@ -1,6 +1,7 @@
 {
     "workbench.colorTheme": "Material Theme Darker",
     "workbench.fontAliasing": "antialiased",
+    "workbench.editor.enablePreview": false,
     "editor.fontFamily": "Monaco",
     "editor.wordWrap": "on",
     "files.exclude": {
@@ -50,7 +51,6 @@
     "workbench.editor.showIcons": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "prettier.singleQuote": true,
-    "prettier.parser": "flow",
     "prettier.tabWidth": 4,
     "editor.tokenColorCustomizations": {
       "textMateRules": [
@@ -201,5 +201,12 @@
         }
       ]
     },
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "[scss]": {
+      "editor.defaultFormatter": "remimarsal.prettier-now"
+    },
+    "prettier.useTabs": false,
+    "[javascript]": {
+      "editor.defaultFormatter": "remimarsal.prettier-now"
+    }
 }
