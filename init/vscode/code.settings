@@ -2,6 +2,8 @@
     "workbench.colorTheme": "Material Theme Darker",
     "workbench.fontAliasing": "antialiased",
     "workbench.editor.enablePreview": false,
+    "explorer.openEditors.visible": 0,
+    "npm.enableScriptExplorer": false,
     "editor.fontFamily": "Monaco",
     "editor.wordWrap": "on",
     "files.exclude": {
@@ -208,5 +210,6 @@
     "prettier.useTabs": false,
     "[javascript]": {
       "editor.defaultFormatter": "remimarsal.prettier-now"
-    }
+    },
+    "editor.renderControlCharacters": false
 }
