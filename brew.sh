@@ -46,7 +46,7 @@ brew install wget --with-iri
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
-brew install php@7.2
+brew install php@7.1
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
