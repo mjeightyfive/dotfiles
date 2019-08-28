@@ -22,7 +22,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install Bash 4.
+# Install a modern version of Bash.
 brew install bash
 brew install zsh
 
@@ -46,7 +46,6 @@ brew install wget --with-iri
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
-brew install php@7.1
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
@@ -56,6 +55,8 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
+brew install php@7.1
+brew install gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -103,6 +104,7 @@ brew install ack
 # brew install git
 brew install git-lfs
 brew install webp
+brew install gs
 brew install imagemagick --with-webp
 # brew install lua
 # brew install lynx
