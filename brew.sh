@@ -91,6 +91,7 @@ brew install woff2
 # brew install xz
 brew install rsync
 brew install fd
+brew install hyperfine
 brew install bat
 brew install fzf
 brew install ncdu
