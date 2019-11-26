@@ -1,0 +1,84 @@
+# Disable the newline at the start of the prompt
+add_newline = true
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[conda]
+disabled = true
+
+[directory]
+truncate_to_repo = false
+
+[dotnet]
+disabled = true
+
+[env_var]
+disabled = true
+
+[git_branch]
+symbol = ""
+style = "bold dimmed white"
+
+[git_state]
+progress_divider = " of "
+
+[git_status]
+modified = "*"
+prefix = ""
+suffix = " "
+style = "bold yellow"
+
+[golang]
+disabled = true
+
+[hostname]
+disabled = true
+
+[jobs]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[line_break]
+disabled = false
+
+[nix_shell]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[java]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[time]
+disabled = true
+
+[username]
+disabled = true
+
+[cmd_duration]
+prefix = ""
