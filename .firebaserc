@@ -1,6 +1,0 @@
-{
-    "projects": {
-        "production": "mj85pl-prod",
-        "staging": "mj85-dev"
-    }
-}

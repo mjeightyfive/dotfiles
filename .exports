@@ -3,7 +3,7 @@
 # Make Sublime Text the default editor.
 export EDITOR='subl -n -w';
 # Make vim the default Git editor.
-export GIT_EDITOR='vim'
+export GIT_EDITOR='nvim'
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
