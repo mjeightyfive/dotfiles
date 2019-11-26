@@ -24,7 +24,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install a modern version of Bash.
 brew install bash
-brew install zsh
+# brew install zsh
 
 brew install fdupes
 brew install bash-completion2
@@ -50,8 +50,7 @@ brew install vim --with-override-system-vi
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
-# Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install nvim
 brew install grep
 brew install openssh
 brew install screen
