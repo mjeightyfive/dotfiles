@@ -38,6 +38,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Use NeoVim by default
+alias vim='nvim'
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
