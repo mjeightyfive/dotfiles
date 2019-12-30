@@ -81,6 +81,7 @@ brew install neofetch
 brew install m-cli
 brew install awscli
 brew install yarn
+brew install fx
 brew install python3
 brew cask install proxyman
 
