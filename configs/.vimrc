@@ -170,6 +170,13 @@ set fileformats=unix,dos,mac
 " Allow cursor keys in insert mode
 " set esckeys
 
+" Cursor Shape
+if $TERM_PROGRAM =~ "iTerm"
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
 " Move up/down editor lines
 nnoremap j gj
 nnoremap k gk
@@ -310,3 +317,15 @@ else
 endif
 
 let g:loaded_python_provider = 0
+
+" absolute width of netrw window
+let g:netrw_winsize = -28
+
+" tree-view
+let g:netrw_liststyle = 3
+
+" sort is affecting only: directories on the top, files below
+let g:netrw_sort_sequence = '[\/]$,*'
+
+" open file in a new tab
+let g:netrw_browse_split = 3
