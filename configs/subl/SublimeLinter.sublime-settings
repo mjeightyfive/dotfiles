@@ -3,43 +3,65 @@
     "debug": false,
 
     // When in the "background" lint mode, this value determines
-    // a delay before a request is send to the linter
+    // the minimum delay before a request is send to the linter
     "delay": 1,
 
     // Available gutter themes:
-    // Blueberry Cross
-    // Blueberry Round
-    // Circle
-    // Danish Royalty
-    // Default
-    // Hands
-    // Knob
-    // Knob Symbol
-    // Koloria
-    // ProjectIcons
+    // - Blueberry Cross
+    // - Blueberry Round
+    // - Circle
+    // - Danish Royalty
+    // - Default
+    // - Hands
+    // - Knob
+    // - Knob Symbol
+    // - Koloria
+    // - ProjectIcons
     // Note that you may need to change the "icon" property in "styles"
     // to an icon in the theme (they usually include "warning" and "error")
     "gutter_theme": "Default",
 
-    // EXPERIMENTAL: See below `demote_while_editing`.
-    "highlights.time_to_idle": 5,
-
-    // EXPERIMENTAL: One of 'none', 'ws_regions', 'warnings'
-    // Essentially picks a predicate fn from `highlights.py` to hide some
-    // lint errors while editing (busy). These errors appear after
-    // `time_to_idle` seconds or immediately on save.
+    // Demote the visibility of a class off errors while you're editing.
+    // The errors will re-appear after `time_to_idle` and immediately on save.
+    // - ws_only: erroneous regions that contain only whitespace
+    // - some_ws: erroneous regions that contain *some* whitespace
+    // - multilines: multiline errors
+    // - warnings: errors of the "warning" type
+    // - all: demote all the things
+    // - none: disable this feature
     "highlights.demote_while_editing": "none",
 
-    // Lint Modes determine when the linter is run
-    // background: asynchronously on every change
-    // load_save: when a file is opened and every time it's saved
-    // manual: only when calling the Lint This View command
+    // Apply a color (via scope) to the demoted errors.
+    // E.g. "" will hide the errors, "comment" is usually a subtle color.
+    "highlights.demote_scope": "",
+
+    // How long to wait before showing the demoted errors again.
+    // Tip: A big value like 3600 will essentially hide the regions until
+    // you save the buffer.
+    "highlights.time_to_idle": 1.5,
+
+    // Set to true to start the highlights hidden. Use the command
+    // "SublimeLinter: Toggle Highlights" to toggle the highlights
+    "highlights.start_hidden": false,
+
+    // Send a "terminate" signal to old lint processes, if their result would
+    // be thrown away. If false we fire-and-forget processes instead.
+    "kill_old_processes": true,
+
+    // Lint Mode determines when the linter is run.
+    // - background: asynchronously on every change
+    // - load_save: when a file is opened and every time it's saved
+    // - manual: only when calling the Lint This View command
+    // - save: only when a file is saved
     "lint_mode": "background",
 
-    // Example of linter specific settings.
-    // Linter specific settings can also be changed in sublime-project settings.
+    // Linter specific settings.
+    // More info: http://www.sublimelinter.com/en/stable/linter_settings.html
+    // Linter specific settings except for 'styles' can also be changed
+    // in sublime-project settings.
     // What settings are available is documented in the readme of the
     // specific linter plugin.
+    // Example:
     "linters": {
         "eslint": {
             "disable": false,
@@ -60,8 +82,8 @@
     },
 
     // Determines what happens when a linter reports a problem without column.
-    // By default, a mark is put in the gutter but no text is highlighted.
-    // If this setting is ``true``, the entire line is also highlighted.
+    // By default, a mark is put in the gutter and the first character is highlighted.
+    // If this setting is true, the entire line is also highlighted.
     "no_column_highlights_line": false,
 
     // Provide extra paths to be searched when locating system executables.
@@ -80,27 +102,41 @@
     // Highlight problems in the minimap.
     "show_marks_in_minimap": true,
 
+    // Show the output panel on save if there are problems.
+    // - window: check if the window has problems.
+    // - view: only check the current file.
+    // - never: disable this feature.
+    "show_panel_on_save": "never",
+
+    // Display counters in the status bar.
+    // The {}'s will be replaced by warnings and errors respectively.
+    // Example alternative: (w:{}, e:{})
+    "statusbar.counters_template": "({}|{})",
+
+    // Show the messages for problems at your cursor position.
+    // - {message} will be replaced by the actual messages.
+    // - {linter} will be replaced by the linter reporting the error.
+    // - {type} will be replaced by either warning or error.
+    // - {code} will be replaced by the error code.
+    // Set to "" to display nothing
+    "statusbar.messages_template": "{message}",
+
+    "statusbar.show_active_linters": true,
+
     // Global styles for all linters.
-    // - mark_style options:
-    //   "fill", "outline",
-    //   "solid_underline", "squiggly_underline", "stippled_underline"
-    //   "none"
-    // - priority determines which mark is show in the gutter;
-    //   error marks will still always overwrite warning marks.
-    // - scope is used to determine the color;
-    //   region.<colorish> are automatically generated scopes in ST > 3148.
-    // - types is an array which can contain "warning" and/or "error".
-    // - codes is an array which can contain error codes provided by a linter.
-    // - icon can be:
-    //   one of the default icons: "circle", "dot" or "bookmark"
-    //   or a path to an icon file like (e.g. "Packages/icons/warning.png")
-    //   or "none" to remove the icon
-    //   or one provided by a gutter theme (e.g. "warning" or "error")
-    //      in theme Default: "warning", "error", "cog", "x",
-    //      and "diamond", "heart", "pointer", "square", "star", "triangle" all
-    //      also have an -outline variant.
-    // Note: At least one of those targets is required: types or codes.
-    // Styles can also be specified per linter.
+    // Note: Styles can also be specified per linter! See above.
+    // Only for linter-styles, there is one more setting:
+    // - codes:
+    //   An array which can contain error codes provided by a linter.
+    //   Only valid as linter style in the "linters" section
+    //
+    // The styles list form a stack evaluated top-down. We call each object
+    // herein a style definition. A style definition must match a specific
+    // linter error, either its code or its error type, to take any effect.
+    //
+    // The default styles cannot be overriden per se, you extend them
+    // in your user settings. The defaults can be read as "All linter problems
+    // are red, outline, dots, but warnings are yellow."
     "styles": [
         {
             "mark_style": "solid_underline",
@@ -120,47 +156,5 @@
                 "error"
             ]
         }
-    ],
-
-    // Maps variant syntaxes to the syntax that you have a linter for.
-    // The syntax is the name of the syntax definition file, in lower case
-    // Run this in the console to find it: view.settings().get('syntax').lower()
-    "syntax_map": {
-        "coffeescript (gulpfile)": "coffeescript",
-        "html (django)": "html",
-        "html (rails)": "html",
-        "html 5": "html",
-        "javascript (babel)": "javascript",
-        "javascript (eslint)": "javascript",
-        "javascript (gruntfile)": "javascript",
-        "javascript (gulpfile)": "javascript",
-        "javascript (postcss)": "javascript",
-        "javascript (puglint)": "javascript",
-        "javascript (stylelint)": "javascript",
-        "javascript (webpack)": "javascript",
-        "json (babel)": "json",
-        "json (bower)": "json",
-        "json (composer)": "json",
-        "json (eslint)": "json",
-        "json (npm)": "json",
-        "json (postcss)": "json",
-        "json (puglint)": "json",
-        "json (settings)": "json",
-        "json (stylelint)": "json",
-        "json (sublime)": "json",
-        "json (tern js)": "json",
-        "magicpython": "python",
-        "php": "html",
-        "python django": "python",
-        "pythonimproved": "python",
-        "xml (config)": "xml",
-        "xml (svg)": "xml",
-        "yaml (circleci)": "yaml",
-        "yaml (docker)": "yaml",
-        "yaml (eslint)": "yaml",
-        "yaml (lock)": "yaml",
-        "yaml (procfile)": "yaml",
-        "yaml (stylelint)": "yaml",
-        "yaml (yarn)": "yaml"
-    },
+    ]
 }
