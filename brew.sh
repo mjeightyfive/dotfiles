@@ -45,7 +45,8 @@ brew install tmux
 brew install grep
 brew install openssh
 brew install screen
-brew install php@7.1
+brew tap exolnet/homebrew-deprecated # o_O
+brew install php@7.1 # o_O
 brew install gmp
 
 # Install font tools.
@@ -70,7 +71,7 @@ brew install ack
 brew install git-lfs
 brew install webp
 brew install gs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install rename
 brew install ssh-copy-id
 brew install tree
