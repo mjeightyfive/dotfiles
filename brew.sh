@@ -45,8 +45,6 @@ brew install tmux
 brew install grep
 brew install openssh
 brew install screen
-brew tap exolnet/homebrew-deprecated # o_O
-brew install php@7.1 # o_O
 brew install gmp
 
 # Install font tools.
@@ -65,6 +63,11 @@ brew install ncdu
 brew install ack
 brew install ag
 brew install noti
+
+# o_O
+brew tap exolnet/homebrew-deprecated
+brew install php@7.1
+brew link php@7.1 --force
 
 # Install other useful binaries.
 brew install ack
