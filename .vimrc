@@ -257,6 +257,17 @@ set t_Co=256
 set background=dark
 let g:material_terminal_italics = 0
 let g:material_theme_style = 'darker'
+
+augroup MyColors
+    autocmd!
+    autocmd ColorScheme * highlight Visual cterm=NONE ctermbg=76 ctermfg=16 gui=NONE guibg=#353535 guifg=NONE
+                      \ | highlight StatusLine cterm=NONE ctermbg=231 ctermfg=160 gui=NONE guibg=#ffffff guifg=#d70000
+                      \ | highlight Normal cterm=NONE ctermbg=17 gui=NONE guibg=#212121
+                      \ | highlight NonText cterm=NONE ctermbg=17 gui=NONE guibg=#212121
+                      "\ | highlight IncSearch cterm=reverse ctermfg=3 guifg=#000000 guibg=#F8E71C
+                      "\ | highlight Search cterm=standout ctermfg=9 guifg=#ffffff guibg=#353535
+augroup END
+
 colorscheme material
 
 " toggle gundo https://docs.stevelosh.com/gundo.vim/#installation
