@@ -7,6 +7,12 @@ eval "$(rbenv init -)"
 
 source $HOME/.zsh/pure/async.zsh
 source $HOME/.zsh/pure/pure.zsh
+
+fpath+=$HOME/.zsh/pure
+
+autoload -U promptinit; promptinit
+prompt pure
+
 source $HOME/.zsh/completion.zsh
 source $HOME/.zsh/history.zsh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
