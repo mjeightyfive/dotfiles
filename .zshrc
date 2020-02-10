@@ -29,7 +29,5 @@ fi
 # Enhanced form of menu completion called `menu selection'
 zmodload -i zsh/complist
 
-# [[ -e "$HOME/.fzf-extras/fzf-extras.zsh" ]] && source "$HOME/.fzf-extras/fzf-extras.zsh"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.nvm.zsh ] && source ~/.nvm.zsh
