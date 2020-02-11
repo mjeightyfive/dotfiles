@@ -30,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
+Plug 'andymass/vim-matchup'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'mileszs/ack.vim'
@@ -48,11 +49,12 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'ianks/vim-tsx'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
-if isdirectory('/usr/local/opt/fzf')
-  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+" If fzf has already been installed via Homebrew, use the existing fzf
+" Otherwise, install fzf. The `--all` flag makes fzf accessible outside of vim
+if isdirectory("/usr/local/opt/fzf")
+  Plug '/usr/local/opt/fzf'
 else
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'junegunn/fzf.vim'
 endif
 
 " coc extensions
@@ -64,6 +66,7 @@ Plug 'prettier/vim-prettier', {
 ::call plug#end()
 
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tslint-plugin', 'coc-html', 'coc-css', 'coc-phpls', 'coc-yaml', 'coc-python', 'coc-highlight', 'coc-emmet', 'coc-svg', 'coc-xml', 'coc-prettier']
+let g:loaded_matchit = 1
 
 if (has('nvim'))
   let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
@@ -117,7 +120,7 @@ set ignorecase
 set incsearch
 
 " Clean search (highlight)
-" nnoremap <silent> <leader><space> :noh<cr>
+ nnoremap <silent> <leader><space> :noh<cr>
 
 " Always show status line
 set laststatus=2
@@ -193,7 +196,6 @@ set hidden
 " Searching
 set smartcase
 set showmatch
-" map <leader><space> :let @/=''<cr> " clear search
 
 set lazyredraw
 set confirm
@@ -207,10 +209,7 @@ set autoread
 " Ignore files matching these patterns when opening files based on a glob pattern.
 " set wildignore+=.pyc,.swp
 
-" ST
-
-
-
+" ST like
 let g:prettier#autoformat = 0
 let g:deoplete#enable_at_startup = 1
 
@@ -226,26 +225,6 @@ augroup vimrc-javascript
   autocmd FileType javascript setl tabstop=4|setl shiftwidth=4|setl expandtab softtabstop=4
 augroup END
 
-
-
-"" fzf.vim
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
-
-" The Silver Searcher
-if executable('ag')
-  let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
-
-" ripgrep
-if executable('rg')
-  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
-  set grepprg=rg\ --vimgrep
-  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
-endif
-
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
@@ -258,14 +237,15 @@ set background=dark
 let g:material_terminal_italics = 0
 let g:material_theme_style = 'darker'
 
-augroup MyColors
+augroup MaterialDarkerCustom
     autocmd!
     autocmd ColorScheme * highlight Visual cterm=NONE ctermbg=76 ctermfg=16 gui=NONE guibg=#353535 guifg=NONE
                       \ | highlight StatusLine cterm=NONE ctermbg=231 ctermfg=160 gui=NONE guibg=#ffffff guifg=#d70000
                       \ | highlight Normal cterm=NONE ctermbg=17 gui=NONE guibg=#212121
                       \ | highlight NonText cterm=NONE ctermbg=17 gui=NONE guibg=#212121
-                      "\ | highlight IncSearch cterm=reverse ctermfg=3 guifg=#000000 guibg=#F8E71C
-                      "\ | highlight Search cterm=standout ctermfg=9 guifg=#ffffff guibg=#353535
+                      \ | highlight MatchParen ctermfg=red guifg=blue cterm=underline gui=underline
+                      "\ | highlight MatchParenCur cterm=underline gui=underline
+                      "\ | highlight MatchWordCur cterm=underline gui=underline
 augroup END
 
 colorscheme material
@@ -334,9 +314,7 @@ else
 endif
 
 let g:loaded_python_provider = 0
-
 let g:netrw_banner = 0
-
 let loaded_netrwPlugin = 1
 
 autocmd StdinReadPre * let s:std_in=1

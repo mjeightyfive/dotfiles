@@ -36,4 +36,3 @@ fi
 zmodload -i zsh/complist
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f ~/.nvm.zsh ] && source ~/.nvm.zsh
