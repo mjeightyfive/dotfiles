@@ -41,6 +41,7 @@ brew install vim
 brew install gnupg
 
 brew install nvim
+brew install ripgrep
 brew install tmux
 brew install grep
 brew install openssh
