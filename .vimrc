@@ -57,6 +57,8 @@ else
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 endif
 
+Plug 'junegunn/fzf.vim'
+
 " coc extensions
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'prettier/vim-prettier', {
@@ -122,6 +124,8 @@ set incsearch
 " Clean search (highlight)
  nnoremap <silent> <leader><space> :noh<cr>
 
+ " Map Ctrl + t to open fuzzy find (FZF)
+nnoremap <c-t> :Files<cr>
 " Always show status line
 set laststatus=2
 " Enable mouse in all modes
