@@ -4,7 +4,7 @@
     "workbench.editor.enablePreview": true,
     "explorer.openEditors.visible": 0,
     "npm.enableScriptExplorer": false,
-    "editor.fontFamily": "Monaco",
+    "editor.fontFamily": "SF Mono",
     "editor.wordWrap": "on",
     "files.exclude": {
       "**/.git": true,
@@ -198,7 +198,7 @@
         }
       ]
     },
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "[scss]": {
       "editor.defaultFormatter": "remimarsal.prettier-now"
     },

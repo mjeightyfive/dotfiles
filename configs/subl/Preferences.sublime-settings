@@ -1,5 +1,4 @@
 {
-    "gpu_window_buffer": false,
     "adaptive_dividers": true,
     "always_prompt_for_file_reload": false,
     "always_show_minimap_viewport": true,
@@ -128,14 +127,14 @@
         "vendor",
         "archv"
     ],
-    "font_face": "Monaco",
+    "font_face": "SF Mono Medium",
     "font_options":
     [
         "subpixel_antialias",
         "no_italic"
     ],
-    "font_size": 13,
-    "gpu_window_buffer": "auto",
+    "font_size": 12,
+    "gpu_window_buffer": false,
     "gutter": true,
     "highlight_line": true,
     "highlight_modified_tabs": true,
@@ -164,8 +163,8 @@
     "index_files": true,
     "index_workers": 0,
     "line_numbers": true,
-    "line_padding_bottom": -1,
-    "line_padding_top": -1,
+    "line_padding_bottom": 0,
+    "line_padding_top": 0,
     "margin": 4,
     "match_brackets": true,
     "match_brackets_angle": true,
