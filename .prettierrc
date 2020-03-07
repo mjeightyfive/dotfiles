@@ -4,7 +4,6 @@
     "trailingComma": "none",
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
-    "parser": "flow",
     "semi": true,
     "requirePragma": false,
     "proseWrap": "preserve",
