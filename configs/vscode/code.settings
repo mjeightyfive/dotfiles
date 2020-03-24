@@ -198,7 +198,6 @@
         }
       ]
     },
-    "editor.fontSize": 12,
     "[scss]": {
       "editor.defaultFormatter": "remimarsal.prettier-now"
     },
@@ -237,5 +236,5 @@
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "top",
-    "search.enableSearchEditorPreview": true
+    "search.searchEditor.doubleClickBehaviour": "goToLocation"
 }
