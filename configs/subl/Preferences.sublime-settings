@@ -127,7 +127,7 @@
         "vendor",
         "archv"
     ],
-    "font_face": "SF Mono Medium",
+    "font_face": "SF Mono",
     "font_options":
     [
         "subpixel_antialias",
