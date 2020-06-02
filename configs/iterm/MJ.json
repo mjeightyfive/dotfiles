@@ -1,11 +1,5 @@
 {
-  "Ansi 5 Color" : {
-    "Red Component" : 0.78039216995239258,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.91764706373214722,
-    "Alpha Component" : 1,
-    "Green Component" : 0.57254904508590698
-  },
+  "ASCII Ligatures" : true,
   "Working Directory" : "\/Users\/mjeightyfive",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -34,11 +28,11 @@
   "Right Option Key Sends" : 0,
   "Character Encoding" : 4,
   "Selection Color" : {
-    "Red Component" : 0.17254902422428131,
+    "Red Component" : 0.00022143110030216806,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.17254902422428131,
+    "Blue Component" : 0.83789526891214239,
     "Alpha Component" : 1,
-    "Green Component" : 0.17254902422428131
+    "Green Component" : 0.71788576686453764
   },
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
@@ -354,8 +348,8 @@
     "Green Component" : 0.43137255311012268
   },
   "Blur" : false,
-  "Normal Font" : "SFMono-Light 12",
   "Vertical Spacing" : 1,
+  "Normal Font" : "SFMono-Light 12",
   "Ansi 7 Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -409,6 +403,12 @@
   "Columns" : 80,
   "Visual Bell" : true,
   "Custom Directory" : "Recycle",
-  "Thin Strokes" : 0,
-  "ASCII Ligatures" : true
+  "Ansi 5 Color" : {
+    "Red Component" : 0.78039216995239258,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.91764706373214722,
+    "Alpha Component" : 1,
+    "Green Component" : 0.57254904508590698
+  },
+  "Thin Strokes" : 0
 }
