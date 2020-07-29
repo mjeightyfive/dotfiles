@@ -89,6 +89,7 @@ brew install awscli
 brew install yarn
 brew install fx
 brew install python3
+brew install monolith
 brew cask install proxyman
 
 # Remove outdated versions from the cellar.
