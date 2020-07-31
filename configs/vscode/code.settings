@@ -236,5 +236,7 @@
     "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "top",
-    "search.searchEditor.doubleClickBehaviour": "goToLocation"
+    "search.searchEditor.doubleClickBehaviour": "goToLocation",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
 }
