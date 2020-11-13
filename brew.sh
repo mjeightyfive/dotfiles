@@ -90,6 +90,7 @@ brew install yarn
 brew install fx
 brew install python3
 brew install monolith
+brew install prettyping
 brew cask install proxyman
 
 # Remove outdated versions from the cellar.
