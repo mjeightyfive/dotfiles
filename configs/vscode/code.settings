@@ -208,7 +208,6 @@
     "editor.renderControlCharacters": false,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.quickSuggestionsDelay": 50,
-    "editor.find.autoFindInSelection": "always",
     "editor.autoIndent": "full",
     "editor.emptySelectionClipboard": true,
     "files.encoding": "utf8",
@@ -238,5 +237,6 @@
     "editor.snippetSuggestions": "top",
     "search.searchEditor.doubleClickBehaviour": "goToLocation",
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "editor.fontLigatures": false
 }
