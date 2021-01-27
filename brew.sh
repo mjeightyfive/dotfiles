@@ -92,6 +92,7 @@ brew install python3
 brew install monolith
 brew install prettyping
 brew cask install proxyman
+brew install ddelange/brewformulae/yt
 
 # Remove outdated versions from the cellar.
 brew cleanup
