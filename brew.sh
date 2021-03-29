@@ -65,6 +65,13 @@ brew install ack
 brew install ag
 brew install noti
 
+brew install procs
+brew install grex
+brew install exa
+brew install dust
+brew install bandwhich
+brew install zoxide
+
 # o_O
 brew tap exolnet/homebrew-deprecated
 brew install php@7.1
