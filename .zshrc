@@ -4,6 +4,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+eval "$(zoxide init zsh)"
 
 source $HOME/.zsh/pure/async.zsh
 source $HOME/.zsh/pure/pure.zsh
