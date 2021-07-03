@@ -25,7 +25,7 @@
     "metaKeyword": "color(var(data) saturation(20%) lightness(60%))",
     "header": "color(var(keyword) saturation(80%) lightness(70%))",
 
-    "fgBase": "color(var(fg) alpha(0.6))",
+    "fgBase": "color(var(fg) alpha(0.7))",
     "typeRef": "color(var(type) saturation(100%) lightness(87%))",
     "keywordBase": "color(var(keyword) lightness(100%))",
     "dataBase": "color(var(data) saturation(40%) lightness(70%))"
@@ -70,6 +70,7 @@
     "shadow": "color(var(cursor) alpha(0.8))",
     "shadow_width": "5"
   },
+  // https://github.com/psmitt/metalanguage/blob/master/examples/ScopeList.ScopeList
   "rules": [
     {
       // Comments
@@ -154,17 +155,18 @@
     },
 
     // Function
-    {
-      // Function definitions
-      "scope": "entity.name.function - meta.function-call",
-      "foreground": "var(fg)"
-    },
+    // {
+    //   // Function definitions
+    //   "scope": "entity.name.function, storage.type.function.arrow",
+    //   "foreground": "var(fg)",
+    //   "font_style": "bold"
+    // },
 
     // Data
     {
       // e.g. "foo" and 42
       // Note: JS inside HTML uses punctuation.definition...
-      "scope": "string, constant, string punctuation.definition, constant punctuation.definition",
+      "scope": "string, string punctuation.definition",
       "foreground": "var(dataBase)"
     },
     {
@@ -182,17 +184,11 @@
       "scope": "string.regexp",
       "background": "color(var(keyword) alpha(0.1) lightness(60%))"
     },
-    // {
-    //   "scope": "constant.language",
-    //   "foreground": [
-    //     "color(var(yellow) blend(#0f0 70%) lightness(70%))",  // nil, true
-    //     "color(var(yellow) blend(#f00 70%) lightness(70%))",  // undefined
-    //     "color(var(yellow) blend(#f00 70%) lightness(70%))",    // false, null
-    //     "color(var(yellow) blend(#00f 70%) lightness(70%))"
-    //   ],
-    //   // Uses "Hashed Syntax Highlighting"
-    //   // https://www.sublimetext.com/docs/3/color_schemes.html#hashed_syntax_highlighting
-    // },
+    {
+      "scope": "constant.language, constant, constant punctuation.definition",
+      "foreground": "var(dataBase)",
+      "font_style": "bold"
+    },
 
     // XML, HTML etc with tags
     {
@@ -248,10 +244,10 @@
       "foreground": "var(unimportant)"
     },
     {
-        "name": "markup links",
-        "scope": "markup.underline.link",
-        "foreground": "var(red)",
-        "font_style": "underline"
+      "name": "markup links",
+      "scope": "markup.underline.link",
+      "foreground": "var(red)",
+      "font_style": "underline"
     },
     {
       // List bullets
@@ -282,7 +278,7 @@
     },
     {
       "scope": "text meta.link markup.underline.link",
-      "foreground": "var(unimportant)",
+      "foreground": "var(unimportant)"
     },
     // image, e.g. ![alt](url)
     {
