@@ -15,7 +15,7 @@
     [
         {
             "characters": "<",
-            "selector": "text.html"
+            "selector": "text.html",
         }
     ],
     "auto_complete_with_fields": false,
@@ -52,7 +52,7 @@
     "caret_extra_width": 1,
     "caret_style": "phase",
     "close_windows_when_empty": false,
-    "color_scheme": "Packages/User/Material-Theme-Darker-Bold-Keywords.tmTheme",
+    "color_scheme": "mjeightyfive-theme/mjeightyfive.sublime-color-scheme",
     "copy_with_empty_selection": true,
     "create_window_at_startup": true,
     "default_encoding": "UTF-8",
@@ -141,7 +141,7 @@
     "hot_exit": true,
     "ignored_packages":
     [
-        "Vintage"
+        "Vintage",
     ],
     "indent_guide_options":
     [
@@ -195,7 +195,7 @@
     "material_theme_titlebar": true,
     "material_theme_tree_headings": true,
     "move_to_limit_on_up_down": false,
-    "open_files_in_new_window": true,
+    "open_files_in_new_window": "always",
     "overlay_scroll_bars": "system",
     "preview_on_click": true,
     "remember_full_screen": false,
@@ -220,18 +220,18 @@
     "spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
     "tab_completion": true,
     "tab_size": 4,
-    "theme": "Adaptive.sublime-theme",
+    "theme": "mjeightyfive-adaptive.sublime-theme",
     "theme_font_options":
     [
     ],
     "translate_tabs_to_spaces": true,
     "tree_animation_enabled": true,
     "trim_automatic_white_space": true,
-    "trim_trailing_white_space_on_save": true,
+    "trim_trailing_white_space_on_save": "not_on_caret",
     "ui_scale": 1.0,
     "use_tab_stops": true,
     "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
     "word_wrap": true,
     "wrap_width": 0,
-    "afn_valid_scopes": ["string"]
+    "afn_valid_scopes": ["string"],
 }
