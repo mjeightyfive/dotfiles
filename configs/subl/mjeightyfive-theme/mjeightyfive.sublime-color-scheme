@@ -248,6 +248,12 @@
       "foreground": "var(unimportant)"
     },
     {
+        "name": "markup links",
+        "scope": "markup.underline.link",
+        "foreground": "var(red)",
+        "font_style": "underline"
+    },
+    {
       // List bullets
       // "-" in "- hello\n- world"
       "scope": "text markup.list punctuation.definition.list_item",
