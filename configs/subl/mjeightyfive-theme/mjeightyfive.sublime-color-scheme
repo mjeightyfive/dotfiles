@@ -74,7 +74,7 @@
   "rules": [
     {
       // Comments
-      "scope": "comment",
+      "scope": "comment, punctuation.definition.comment",
       "foreground": "color(var(fg) alpha(0.15))"
       // "foreground_adjust": "alpha(0.3)"
     },
