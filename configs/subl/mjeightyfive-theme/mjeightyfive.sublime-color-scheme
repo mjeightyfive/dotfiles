@@ -37,9 +37,9 @@
     "caret": "var(cursor)",
 
     // selection
-    "selection": "color(var(orange) lightness(30%) alpha(0.3))",
+    "selection": "color(var(orange) lightness(30%) alpha(0.5))",
     "selection_border_width": "0",
-    "inactive_selection": "color(var(orange) alpha(0.07))",
+    "inactive_selection": "color(var(orange) alpha(0.1))",
 
     // gutter
     // "gutter": "#000", // defaults to background
