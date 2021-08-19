@@ -134,7 +134,7 @@
         "no_italic"
     ],
     "font_size": 12,
-    "gpu_window_buffer": false,
+    "gpu_window_buffer": true,
     "gutter": true,
     "highlight_line": true,
     "highlight_modified_tabs": true,
