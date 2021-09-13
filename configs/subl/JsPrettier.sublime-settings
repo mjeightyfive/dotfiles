@@ -1,6 +1,6 @@
 {
     "debug": false,
-    "prettier_cli_path": "/Users/mjeightyfive/.nvm/versions/node/v12.14.1/bin/prettier",
+    "prettier_cli_path": "/Users/mjeightyfive/.nvm/versions/node/v14.16.0/bin/prettier",
     "node_path": "",
     "auto_format_on_save": false,
     "auto_format_on_save_excludes": ["*/node_modules/*", "*/.git/*"],
@@ -13,7 +13,7 @@
         "singleQuote": true,
         "trailingComma": "none",
         "bracketSpacing": true,
-        "jsxBracketSameLine": false,
+        "bracketSameLine": false,
         "parser": "flow",
         "semi": true,
         "requirePragma": false,
