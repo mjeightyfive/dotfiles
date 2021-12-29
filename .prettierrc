@@ -4,7 +4,7 @@
     "singleQuote": true,
     "trailingComma": "none",
     "bracketSpacing": true,
-    "jsxBracketSameLine": false,
+    "bracketSameLine": false,
     "semi": true,
     "requirePragma": false,
     "proseWrap": "preserve",
