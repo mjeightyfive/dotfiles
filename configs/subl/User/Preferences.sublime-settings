@@ -234,4 +234,5 @@
     "word_wrap": true,
     "wrap_width": 0,
     "afn_valid_scopes": ["string"],
+    "update_check": true,
 }

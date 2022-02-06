@@ -1,0 +1,10 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+  "diagnostics_highlight_style": {
+    "error": "underline",
+    "warning": "underline",
+    "info": "underline",
+    "hint": "underline"
+  },
+  "diagnostics_gutter_marker": "circle"
+}

@@ -2,7 +2,7 @@
 {
     "dictionary": "Packages/Language - English/en_GB.dic",
     "extensions": [
-        "md"
+        "md",
     ],
-    "spell_check": true
+    "spell_check": true,
 }
