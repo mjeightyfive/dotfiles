@@ -47,7 +47,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'ianks/vim-tsx'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
 " If fzf has already been installed via Homebrew, use the existing fzf
 " Otherwise, install fzf. The `--all` flag makes fzf accessible outside of vim
@@ -60,7 +60,7 @@ endif
 Plug 'junegunn/fzf.vim'
 
 " coc extensions
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile',
   \ 'for': ['javascript', 'typescript', 'css', 'scss', 'json', 'markdown', 'yaml', 'html'] }
@@ -79,9 +79,9 @@ if (has('termguicolors'))
 endif
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
-  Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
@@ -259,11 +259,11 @@ colorscheme material
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
+    let save_cursor = getpos(".")
+    let old_query = getreg('/')
+    :%s/\s\+$//e
+    call setpos('.', save_cursor)
+    call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 
@@ -271,7 +271,7 @@ noremap <leader>ss :call StripWhitespace()<CR>
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
-	set undodir=~/.vim/undo
+    set undodir=~/.vim/undo
 endif
 
 " Don’t create backups when editing files in certain directories
