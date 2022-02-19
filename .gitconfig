@@ -188,3 +188,8 @@
 [url "git://gist.github.com/"]
 
     insteadOf = "gist:"
+
+[user]
+
+    email = mjeightyfive@gmail.com
+    name = mjeightyfive
