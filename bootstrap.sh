@@ -13,7 +13,7 @@ function doIt() {
 		--exclude "LICENSE-MIT.txt" \
         --exclude "configs" \
 		-avh --no-perms . ~;
-	source ~/.z_profile;
+	source ~/.zprofile;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
