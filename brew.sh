@@ -72,11 +72,6 @@ brew install dust
 brew install bandwhich
 brew install zoxide
 
-# o_O
-brew tap exolnet/homebrew-deprecated
-brew install php@7.1
-brew link php@7.1 --force
-
 # Install other useful binaries.
 brew install ack
 brew install git-lfs
