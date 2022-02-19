@@ -1,26 +1,7 @@
 [alias]
 
-    # Pretty logs
-    lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%Creset%C(blue)%ad%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%Creset %Cgreen%cr%Creset %Creset%C(blue)%an%Creset%Cgreen)%Creset' --abbrev-commit
-
-    lg-branch = log --graph  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%Creset%C(blue)%ad%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%Creset %Cgreen%cr%Creset %Creset%C(blue)%an%Creset%Cgreen)%Creset' --abbrev-commit
-
-    lg-files = log --all --name-status --pretty=format:'%Cred%ad%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%x08%Creset - %Cgreen%h%Creset - %C(blue)%an%Creset%C(yellow)%d%Creset\n%C(reverse) %s %Creset' --abbrev-commit
-
-    # Other pretty logs
-    le = log --oneline --decorate
-    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-    ls1 = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-    lds = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
-    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
-    lc  = "!f() { git ll "$1"^.."$1"; }; f"
-    lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
-
     # View abbreviated SHA, description, and history graph of the latest 20 commits
     l = log --pretty=oneline -n 20 --graph --abbrev-commit
-
-	# Pull in remote changes for the current repository and all its submodules
-	p = git pull --recurse-submodules
 
     # View the current working tree status using the short format
     s = status -s
@@ -32,7 +13,7 @@
     di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
     # Pull in remote changes for the current repository and all its submodules
-    p = !"git pull; git submodule foreach git pull origin master"
+    p = pull --recurse-submodules
 
     # Clone a repository including all submodules
     c = clone --recursive
@@ -98,6 +79,9 @@
         fi \
     }; f"
 
+    # Show the user email for the current repository.
+    whoami = config user.email
+
 [apply]
 
     # Detect whitespace errors when applying a patch
@@ -125,13 +109,12 @@
     # Speed up commands involving untracked files such as `git status`.
     # https://git-scm.com/docs/git-update-index#_untracked_cache
     untrackedCache = true
-	editor = nvim
 
 [color]
 
     # Use colors in Git commands that are capable of colored output when
     # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = true
+    ui = auto
 
 [color "branch"]
 
@@ -155,10 +138,7 @@
 [commit]
 
     # https://help.github.com/articles/signing-commits-using-gpg/
-    gpgsign = false
-
-[rebase]
-    instructionFormat = %s [%an]
+    gpgsign = true
 
 [diff]
 
@@ -208,13 +188,3 @@
 [url "git://gist.github.com/"]
 
     insteadOf = "gist:"
-[user]
-	email = mjeightyfive@gmail.com
-	name = mjeightyfive
-[filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
-[credential]
-	helper = osxkeychain
