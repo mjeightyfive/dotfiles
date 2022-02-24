@@ -49,15 +49,15 @@ brew install screen
 brew install gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+# brew tap bramstein/webfonttools
+# brew install sfnt2woff
+# brew install sfnt2woff-zopfli
+# brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install rsync
 brew install fd
-brew install hyperfine
+# brew install hyperfine
 brew install bat
 brew install fzf
 brew install ncdu
@@ -69,8 +69,8 @@ brew install procs
 brew install grex
 brew install exa
 brew install dust
-brew install bandwhich
-brew install zoxide
+# brew install bandwhich
+# brew install zoxide
 
 # Install other useful binaries.
 brew install ack
@@ -87,7 +87,7 @@ brew install ydiff
 brew install zopfli
 brew install neofetch
 brew install m-cli
-brew install awscli
+# brew install awscli
 brew install yarn
 brew install fx
 brew install python3
