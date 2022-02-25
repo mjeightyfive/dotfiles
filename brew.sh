@@ -93,8 +93,24 @@ brew install fx
 brew install python3
 brew install monolith
 brew install prettyping
-brew cask install proxyman
 brew install ddelange/brewformulae/yt
+
+brew install duti
+brew install coreutils
+brew install findutils
+brew install grep
+brew install gzip
+brew install make
+brew install bitwarden-cli
+
+brew install --cask bitwarden
+brew install --cask docker
+brew install --cask firefox
+# brew install --cask monitorcontrol
+brew install --cask insomnia
+brew install --cask slack
+brew install --cask visual-studio-code
+brew install --cask imageoptim
 
 # Remove outdated versions from the cellar.
 brew cleanup
