@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
