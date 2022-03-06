@@ -39,10 +39,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'preservim/nerdcommenter'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install --frozen-lockfile'  }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install --frozen-lockfile'  }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'w0rp/ale'
-Plug 'kaicataldo/material.vim'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -252,6 +252,8 @@ augroup MaterialDarkerCustom
                       "\ | highlight MatchWordCur cterm=underline gui=underline
 augroup END
 
+let g:material_terminal_italics = 0
+let g:material_theme_style = 'darker'
 colorscheme material
 
 " toggle gundo https://docs.stevelosh.com/gundo.vim/#installation
