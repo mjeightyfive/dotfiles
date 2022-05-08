@@ -1,28 +1,33 @@
 // SublimeLinter Settings - User
 {
-    "paths": {
+    "paths":
+    {
         "linux": [],
         "osx": ["/Users/mjeightyfive/.nvm/versions/node/v16.14.0/bin/node"],
         "windows": []
     },
     "styles": [
-        {
-            "mark_style": "solid_underline",
-            "priority": 1,
-            "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
-            "icon": "x",
-            "types": [
-                "warning"
-            ]
-        },
-        {
-            "mark_style": "solid_underline",
-            "priority": 1,
-            "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
-            "icon": "x",
-            "types": [
-                "error"
-            ]
+    {
+        "mark_style": "solid_underline",
+        "priority": 1,
+        "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
+        "icon": "x",
+        "types": [
+            "warning"
+        ]
+    },
+    {
+        "mark_style": "solid_underline",
+        "priority": 1,
+        "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
+        "icon": "x",
+        "types": [
+            "error"
+        ]
+    }],
+    "linters": {
+        "eslint": {
+            "selector": "source.ts, source.tsx, source.js - meta.attribute-with-value"
         }
-    ]
+    }
 }
