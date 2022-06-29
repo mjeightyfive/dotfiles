@@ -76,6 +76,7 @@
         ".cache/*",
         ".next/*",
         "dist/*",
+        "tests/coverage/*",
         "bower_components/*",
         "node_modules/*",
         "*.pyc",
@@ -201,5 +202,5 @@
     "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
     "word_wrap": true,
     "wrap_width": 0,
-    "afn_valid_scopes": ["string"],
+    "afn_valid_scopes": ["string"]
 }
