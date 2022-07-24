@@ -37,6 +37,7 @@
         "*.zip",
         ".DS_Store",
         "tmp/*",
+        "coverage/*",
         "_tmp/*",
         "*.png",
         "*.psd",
@@ -75,6 +76,7 @@
         "dist/*",
         "bower_components/*",
         "node_modules/*",
+        "coverage/*",
         "yarn.lock",
         "package-lock.json",
         "*.pyc",
@@ -176,5 +178,6 @@
     "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
     "word_wrap": true,
     "wrap_width": 0,
-    "afn_valid_scopes": ["string"]
+    "afn_valid_scopes": ["string"],
+    "update_check": true
 }
