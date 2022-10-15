@@ -63,6 +63,7 @@ brew install fzf
 brew install ncdu
 brew install ack
 brew install ag
+brew install jq
 brew install noti
 
 brew install procs
