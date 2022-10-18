@@ -112,6 +112,7 @@ brew install --cask insomnia
 brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask imageoptim
+brew install --cask warp
 
 # Remove outdated versions from the cellar.
 brew cleanup
