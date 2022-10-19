@@ -109,6 +109,7 @@ brew install --cask docker
 brew install --cask firefox
 # brew install --cask monitorcontrol
 brew install --cask insomnia
+brew install --cask sloth
 brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask imageoptim
