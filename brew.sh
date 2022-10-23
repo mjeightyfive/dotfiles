@@ -79,6 +79,7 @@ brew install git-lfs
 brew install webp
 brew install gs
 brew install imagemagick
+brew install exiftool
 brew install rename
 brew install ssh-copy-id
 brew install tree
