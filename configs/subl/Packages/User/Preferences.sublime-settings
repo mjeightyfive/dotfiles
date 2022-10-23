@@ -63,6 +63,7 @@
   "draw_indent_guides": true,
   "draw_minimap_border": true,
   "draw_white_space": "selection",
+  "draw_unicode_white_space": "none",
   "enable_hexadecimal_encoding": true,
   "enable_tab_scrolling": true,
   "enable_typescript_language_service": false,
