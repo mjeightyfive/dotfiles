@@ -1,11 +1,11 @@
 {
-    "workbench.colorTheme": "mj",
-    "workbench.fontAliasing": "default",
-    "workbench.editor.enablePreview": true,
-    "explorer.openEditors.visible": 0,
-    "editor.fontFamily": "SF Mono",
-    "editor.wordWrap": "on",
-    "files.exclude": {
+  "workbench.colorTheme": "mj",
+  "workbench.fontAliasing": "default",
+  "workbench.editor.enablePreview": true,
+  "explorer.openEditors.visible": 0,
+  "editor.fontFamily": "SF Mono",
+  "editor.wordWrap": "on",
+  "files.exclude": {
       "**/.git": true,
       "**/.svn": true,
       "**/.hg": true,
@@ -22,6 +22,7 @@
       "**/bower_components": true
     },
     "editor.lineHeight": 15,
+    "editor.letterSpacing": -0.5,
     "editor.bracketPairColorization.enabled": false,
     "workbench.startupEditor": "none",
     "window.restoreWindows": "all",
@@ -161,7 +162,6 @@
             "keyword.control",
             "keyword.operator",
             "keyword.operator.new",
-            "keyword.operator.assignment",
             "keyword.operator.arithmetic",
             "keyword.operator.logical",
             "keyword.other",
@@ -214,8 +214,6 @@
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "top",
     "search.searchEditor.doubleClickBehaviour": "goToLocation",
-    "#telemetry.enableCrashReporter": false,
-    "#telemetry.enableTelemetry": false,
     "editor.fontLigatures": false,
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "editor.inlineSuggest.enabled": true,
