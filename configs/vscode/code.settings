@@ -17,6 +17,8 @@
       "**/.git/subtree-cache/**": true,
       "**/node_modules/**": true
     },
+    "search.searchOnType": false,
+    "search.mode": "reuseEditor",
     "search.exclude": {
       "**/node_modules": true,
       "**/bower_components": true
