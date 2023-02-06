@@ -1,0 +1,21 @@
+{
+  "name": "mj",
+  "displayName": "mj",
+  "description": "mj",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "mj",
+        "uiTheme": "vs-dark",
+        "path": "./themes/mj-color-theme.json"
+      }
+    ]
+  }
+}
