@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoFileName",
+		"BracketHighlighter",
+		"Compare Side-By-Side",
+		"EditorConfig",
+		"Emmet",
+		"Fix Mac Path",
+		"GitHubinator",
+		"HTML-CSS-JS Prettify",
+		"JsPrettier",
+		"LSP",
+		"LSP-typescript",
+		"MarkdownPreview",
+		"Missing Palette Commands",
+		"Package Control",
+		"Pretty JSON",
+		"SublimeLinter",
+		"SublimeLinter-contrib-yamllint",
+		"SublimeLinter-eslint",
+		"SublimeLinter-stylelint",
+	],
+}
