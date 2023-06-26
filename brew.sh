@@ -23,7 +23,6 @@ brew install gnu-sed
 # Install a modern version of Bash.
 brew install zsh
 
-brew install fdupes
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
@@ -40,24 +39,9 @@ brew install vim
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
-brew install nvim
-brew install ripgrep
-brew install tmux
-brew install grep
-brew install openssh
-brew install screen
-brew install gmp
-
-# Install font tools.
-# brew tap bramstein/webfonttools
-# brew install sfnt2woff
-# brew install sfnt2woff-zopfli
-# brew install woff2
-
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install rsync
 brew install fd
-# brew install hyperfine
 brew install bat
 brew install fzf
 brew install ncdu
@@ -66,14 +50,19 @@ brew install ag
 brew install jq
 brew install noti
 
+# Install other useful binaries.
 brew install procs
 brew install grex
 brew install exa
 brew install dust
-# brew install bandwhich
-# brew install zoxide
-
-# Install other useful binaries.
+brew install nvim
+brew install ripgrep
+brew install tmux
+brew install grep
+brew install openssh
+brew install screen
+brew install gmp
+brew install fdupes
 brew install ack
 brew install git-lfs
 brew install webp
@@ -96,25 +85,21 @@ brew install python3
 brew install monolith
 brew install prettyping
 brew install ddelange/brewformulae/yt
-
 brew install duti
 brew install coreutils
-brew install findutils
 brew install grep
 brew install gzip
 brew install make
 brew install bitwarden-cli
-
-brew install --cask bitwarden
+# brew install --cask bitwarden
 brew install --cask docker
 brew install --cask firefox
 # brew install --cask monitorcontrol
-brew install --cask insomnia
-brew install --cask sloth
+# brew install --cask insomnia
+# brew install --cask sloth
 brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask imageoptim
-brew install --cask warp
 
 # Remove outdated versions from the cellar.
 brew cleanup
