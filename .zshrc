@@ -36,3 +36,12 @@ fi
 zmodload -i zsh/complist
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(pyenv init -)"
+
+# pnpm
+export PNPM_HOME="/Users/mjeightyfive/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
