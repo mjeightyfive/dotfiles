@@ -58,6 +58,7 @@ else
 endif
 
 Plug 'junegunn/fzf.vim'
+" Plug 'github/copilot.vim'
 
 " coc extensions
 " Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
