@@ -441,8 +441,7 @@ defaults write com.apple.HIToolbox AppleFnUsageType -int 0
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool false
 
 # Choose whether to enable moving focus with Tab and Shift Tab
-# Options: 0 (disabled - default), 2 (enabled)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 0
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Allows you to select the behavior when a key is held down for a long time
 # Options: true (show character accents menu - default), false (repeat character while key held)
