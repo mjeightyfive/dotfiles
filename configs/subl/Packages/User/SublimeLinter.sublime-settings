@@ -3,7 +3,7 @@
     "paths":
     {
         "linux": [],
-        "osx": ["/Users/mjeightyfive/.nvm/versions/node/v16.14.0/bin/node"],
+        "osx": ["/Users/marcin/.nvm/versions/node/v16.14.0/bin/node"],
         "windows": []
     },
     "styles": [

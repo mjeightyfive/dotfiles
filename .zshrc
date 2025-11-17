@@ -39,7 +39,7 @@ zmodload -i zsh/complist
 eval "$(pyenv init -)"
 
 # pnpm
-export PNPM_HOME="/Users/mjeightyfive/Library/pnpm"
+export PNPM_HOME="/Users/marcin/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
