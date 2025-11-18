@@ -857,9 +857,6 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
 ###############################################################################
 
-# Enable the debug menu in Address Book
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
-
 # Enable Dashboard dev mode (allows keeping widgets on the desktop)
 defaults write com.apple.dashboard devmode -bool true
 
@@ -963,3 +960,109 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 
 # Disable Crash Reporter
 # sudo defaults write com.apple.CrashReporter DialogType none
+
+# Get current Username and User ID
+CURRENT_USER=$(stat -f %Su /dev/console)
+USER_ID=$(id -u "$CURRENT_USER")
+
+# Show battery percentage
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+
+# Show date and seconds
+defaults write com.apple.menuextra.clock IsAnalog -int 0
+defaults write com.apple.menuextra.clock Show24Hour -int 1
+defaults write com.apple.menuextra.clock Date -int 1
+defaults write com.apple.menuextra.clock ShowDayOfWeek -int 1
+defaults write com.apple.menuextra.clock ShowSeconds -int 0
+
+# Show bluetooth icon
+defaults -currentHost write com.apple.controlcenter Bluetooth -int 18
+
+# Show volume icon
+defaults -currentHost write com.apple.controlcenter Sound -int 18
+
+# Disable Siri
+defaults write com.apple.Siri StatusMenuVisible -bool false
+defaults write com.apple.assistant.support "Assistant Enabled" -bool false
+
+# Add VPN icon
+# open "/System/Library/CoreServices/Menu Extras/vpn.menu"
+
+# Enable the input menu in the menu bar
+defaults write com.apple.TextInputMenu visible -bool false
+
+# Add an additional input source to the list of input sources. Ex: French - Numerical. Visible only after a reboot.
+# defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>1111</integer><key>KeyboardLayout Name</key><string>French - numerical</string></dict>'
+
+# Display all files and folders sizes
+# /usr/libexec/PlistBuddy -c "Set :'FK_StandardViewSettings':'ExtendedListViewSettingsV2':'calculateAllSizes' 'true'" /Users/$CURRENT_USER/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :'FK_StandardViewSettings':'ListViewSettings':'calculateAllSizes' 'true'" /Users/$CURRENT_USER/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :'StandardViewSettings':'ExtendedListViewSettingsV2':'calculateAllSizes' 'true'" /Users/$CURRENT_USER/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :'StandardViewSettings':'ListViewSettings':'calculateAllSizes' 'true'" /Users/$CURRENT_USER/Library/Preferences/com.apple.finder.plist
+
+
+###################
+# SYSTEM SETTINGS #
+###################
+
+# Beep feedback when changing volume
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -integer 1
+
+# Beep feedback when plugging in the power adapter
+defaults write com.apple.PowerChime ChimeOnAllHardware -bool true
+
+# Disable Force Click / Force Touch / Haptic feedback
+defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -int 1
+
+# Enable two buttons / secondary / right click on Magic Mouses
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string "TwoButton"
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string "TwoButton"
+
+# Set timezone manually · Use /usr/sbin/systemsetup -listtimezones
+/usr/sbin/systemsetup -settimezone Europe/London
+
+# Safari : show bookmarks bar and status bar
+launchctl asuser "$USER_ID" defaults write com.apple.Safari ShowFavoritesBar-v2 -bool true
+launchctl asuser "$USER_ID" defaults write com.apple.Safari ShowOverlayStatusBar -bool true
+
+# Google Chrome : Force relaunch (in milliseconds) when there is a pending update + Home button
+launchctl asuser "$USER_ID" defaults write com.google.Chrome RelaunchNotificationPeriod -int 21600000
+launchctl asuser "$USER_ID" defaults write com.google.Chrome RelaunchNotification -int 2
+launchctl asuser "$USER_ID" defaults write com.google.Chrome ShowHomeButton -bool true
+
+# Activity Monitor : Show Data in graph instead of IO and packets
+defaults write com.apple.ActivityMonitor DiskGraphType -int 1
+defaults write com.apple.ActivityMonitor NetworkGraphType -int 1
+
+# Check 'Reopen Windows When Logging Back'
+defaults write com.apple.loginwindow TALLogoutSavesState -bool true
+
+# Enable Firewall
+/usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+/usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+
+# Disable Power Nap & Wake for Network Access
+sudo -u pmset -a powernap 0
+sudo -u pmset -a womp 0
+
+# Disable tiled windows margins
+defaults write com.apple.WindowManager EnableTiledWindowMargins -bool false
+
+# Disable password hints
+defaults write com.apple.loginwindow RetriesUntilHint -int 0
+
+####################
+# RESTART SERVICES #
+####################
+
+killall cfprefsd
+killall SystemUIServer
+killall -HUP bluetoothd
+killall ControlStrip
+killall Finder
+killall Dock
+killall TextInputMenuAgent
+killall WindowManager
+killall replayd
+
+exit 0
