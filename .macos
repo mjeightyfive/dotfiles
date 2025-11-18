@@ -1006,7 +1006,7 @@ defaults write com.apple.TextInputMenu visible -bool false
 ###################
 
 # Beep feedback when changing volume
-defaults write NSGlobalDomain com.apple.sound.beep.feedback -integer 1
+defaults write NSGlobalDomain com.apple.sound.beep.feedback -integer 0
 
 # Beep feedback when plugging in the power adapter
 defaults write com.apple.PowerChime ChimeOnAllHardware -bool true
