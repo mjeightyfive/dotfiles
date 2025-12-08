@@ -101,5 +101,9 @@ brew install --cask slack
 brew install --cask visual-studio-code
 brew install --cask imageoptim
 
+# osxphotos
+brew tap RhetTbull/osxphotos
+brew install osxphotos
+
 # Remove outdated versions from the cellar.
 brew cleanup
